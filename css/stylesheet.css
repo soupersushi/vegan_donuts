@@ -1,0 +1,320 @@
+/**************************
+	Author:Cherlaine
+	Date:
+
+	Colors Used:
+
+	Light Cream: #f2f3ee
+	Orange:      #d17f38
+	Yellow:		 #ec804f
+	Brown:		 #4b2707
+
+***************************/
+
+/**************************
+	GENERAL STYLES
+***************************/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0; 
+	background: #f2f3ee url('../img/bg-tile.gif')top left repeat; 
+	font-family: Helvetica, Arial, sans-serif;
+	color: #4b2707; 
+}
+
+h1{
+	font-family: 'Love Ya Like A Sister', Helvetica, Arial, sans-serif;
+	text-align: center; 
+	font-size: 2.8125em; /*45px/16px*/
+}
+
+h2{
+	font-size: 2.375em;  /*38x/16px*/
+}
+
+h3{
+	font-size: 1.4em;  /*22.4px/16px*/
+}
+
+h4{
+	font-size: 1.5625em;  /*25x/16px*/
+}
+
+p{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em; 
+}
+
+img{
+	max-width: 100%; 
+}
+
+.border{
+	height: 90px; 
+	max-width: 20%; 
+	background: url('../img/divider.png') no-repeat center;
+	background-size: contain; 
+	margin: auto; 
+}
+
+/**************************
+		   HEADER
+***************************/
+.main-header{
+	height: 200px; 
+	text-align: center; 
+	margin: 20px 0 20px 0;
+}
+
+ li{
+	display: inline; 
+	text-transform: uppercase;
+	padding: 0 30px 0 10px;
+}
+
+
+/**************************
+		   HERO
+***************************/
+.hero{
+	height: 500px; 
+	background: #e8c04f; 
+	background: #e8c04f  url('../img/donut-shoppe.png') no-repeat center; 
+	background-size: contain; 
+	padding: 90px 0 20px 0; 
+}
+
+.fwi-icon{
+	position: absolute;
+	margin: -49px 0 0 1000px; 
+}
+
+
+
+/**************************
+	 PRIMARY CONTENT
+***************************/
+.primary-content{
+	width: 75%; 
+	padding-right: 30px; 
+	padding-left: 30px;
+	margin: auto; 
+	max-width: 1000px; 
+}
+
+h2, h3{
+	text-align: center; 
+}
+
+.primary-info, 
+.secondary-info{
+	width: 45%; 
+}
+
+.primary-info{
+	float: left;
+}
+
+.secondary-info{
+	float: right; 
+}
+
+/**************************
+	 SECONDARY CONTENT
+***************************/
+.secondary-content{
+	width: 75%;
+	padding-right: 30px; 
+	padding-left: 30px;
+	margin: auto; 
+	max-width: 1000px; 
+}
+
+
+.news, 
+.donut{
+	width: 45%
+}
+
+.news{
+	float: left; 
+}
+
+.header{
+	text-align: left; 
+}
+h4, h5 {
+	margin-left: 50px; 
+	line-height: 0em;
+}
+
+h5{
+	color: #ec804f; 
+	font-size: 1.0em;  /*20x/16px*/
+}
+
+.icon-news{
+	float: left; 
+	margin-top: 24px; 
+}
+
+.calendar{
+	float: left; 
+	margin-top: 9px; 
+}
+
+.donut{
+	float: right; 
+}
+
+.news p{
+	margin-left: 48px; 
+}
+
+
+
+/**************************
+		FOOTER
+***************************/
+.main-footer{
+	height: 150px; 
+	background: #4b2707 repeat-x;  
+	margin-top: 50px; 
+}
+
+.apple,
+.recycle{
+	height: 35px; 
+	color: white;
+	line-height: 0px; 
+}
+
+#apple{
+	float: left; 
+	display: inline-block;
+	margin: 30px 0 0 300px; 
+}
+
+#recycle{
+	float: right; 
+	margin: 30px 300px 0 0;
+}
+
+.icon-apple, 
+.icon-recycle{
+	padding-right: 20px; 
+}
+
+
+/************************
+	 	CLEARFIX
+*************************/	
+.group:after{
+	content:"";
+	display: table; 
+	clear: both;
+}
+
+
+
+/************************
+	  MEDIA QUERIES
+*************************/	
+
+@media (max-width: 900px) {
+
+	.main-header{
+		height: 150px;
+		width: 100%; 
+		margin: 0; 
+	}
+
+	li{
+		font-size: .95em; 
+		padding: 2px 2px; 
+	}
+
+	.logo{
+		width: 30%; 
+	}
+
+	.hero{
+		height: 400px; 
+	}
+
+	.fwi-icon{
+		display: none; 
+	}
+
+	.primary-content{
+		width: 100%; 
+		font-size: .75em; 
+	}
+
+	.primary-info, 
+	.secondary-info{
+		width: 100%; 
+		float: none; 
+		margin: auto;
+		text-align: center; 
+	}
+
+	.news,
+	.donuts, 
+	.donut{
+		width: 100%;
+		float: none;
+		font-size: .75em;
+	}
+
+	.border{
+		display: none; 
+	}
+
+	.main-footer{
+		height: 100px;
+		width: 100%; 
+		font-size:.75em;
+	}
+	#apple,
+	#recycle{
+		width: 100%;
+		display: none;
+	}
+
+}
+
+
+
+@media (max-width: 580px) {
+
+	.main-header{
+		height: 50px;
+		width: 100%; 
+		margin: 0; 
+	}
+
+	li{
+		font-size: .80em; 
+		padding: none;
+	}
+	li img{
+		display: none;
+	}
+
+	.hero{
+		height: 200px; 
+	}
+
+	.secondary-content{
+		width: 100%
+	}
+
+	.donut{
+		width: 80%; 
+		margin: auto; 
+	}
+}
