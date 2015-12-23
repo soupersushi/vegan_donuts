@@ -1,1 +1,1 @@
-nul is ./nul
+Created a mock-up of a website using assets given to me. 
